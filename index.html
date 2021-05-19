@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Code Quiz</title>
+  <style>
+    .hidden{
+      display: none;
+    }
+  </style>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+</head>
+<body>
+  <section id="strt">
+    <h1 class="text-center">Coding Quiz Challenge</h1>
+    <p class="text-center">Try to answer the following code-related questions within the time frame. Keep in mind that incorrect answers will penalize your score/time by ten seconds</p>
+    <div class="d-grid gap-2">
+      <button class="btn btn-outline-success" id="startButton" type="button">Start Quiz</button>
+    </div>
+</section>
+<section class="text-center" id="end-result"></section> <br>
+<section class="text-center" id="question"></section> <br>
+<section class="text-center" id="result"></section> <br> 
+<section class="text-center" id="time">Time Left: 60</section> <br>
+<section class="text-center hidden" id="scoreSubmission">
+  <form>
+    <div class="mb-3">
+      <label for="score" class="form-label">Enter initials</label>
+      <input type="text" class="form-control" id="initials">
+    </div>
+    <button type="button" class="btn btn-primary" id="submitScore">Submit Score</button>
+  </form>
+</section>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+<script src="myscript.js"></script>
+  
+</body>
+</html>
